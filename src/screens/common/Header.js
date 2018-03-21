@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import {
     View,
     Text,
+    Image,
     StyleSheet
     } from 'react-native';
 
 const  formatDate =  () => {
     var date = new Date();
-    return date.getFullYear()+"年"+(date.getMonth()+1)+"月"+date.getDate()+"日";
+    return date.getFullYear()+"年 "+(date.getMonth()+1)+"月 "+date.getDate()+"日";
 }
 
 const getWeekDay = ()=> {
@@ -41,12 +42,7 @@ export default class Footer extends Component{
     render(){
         return(
             <View style={styles.container}>
-                <Text style={styles.logo}>
-                +
-                </Text>
-                <Text style={styles.name}>
-                **医院智能分诊系统
-                </Text>
+                <Image style={styles.logo} source={require('../../images/logo.png')}/>
                 <View style={styles.headerRight}>
                     <Text style={[styles.dateTextSmall]}>{formatDate()}</Text>
                     <View style={{flexDirection:'row',justifyContent:'flex-start',alignItems:'center'}}>
@@ -63,34 +59,26 @@ const styles  = StyleSheet.create({
         flexDirection:'row',
         position:'absolute',
         top:0,
-        height:90,
+        height:95,
         width:'100%',
-        paddingLeft:20,
-        paddingRight:20,
+        paddingLeft:63,
+        paddingRight:63,
         alignItems:'center',
         backgroundColor:'#26AA83'
     },
-    logo:{
-        fontSize:50,
-        marginRight:10,
-        color:'#fff'
-    },
-    name:{
-        flex:1,
-        fontSize:30,
-        color:'#fff'
-    },
+
     headerRight : {
+        flex:1,
         justifyContent:'center',
-        alignItems:'flex-start'
+        alignItems:'flex-end'
     },
     dateTextSmall:{
-        fontSize:20,
+        fontSize:17,
         color:'#fff'
     },
     dateTextLarge:{
         marginLeft:10,
-        fontSize:26,
+        fontSize:29,
         color:'#fff'
     }
 });

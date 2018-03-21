@@ -23,13 +23,13 @@ export default class Index extends PureComponent{
                 <View style={styles.menuContainer}>
                     <View style={[styles.menu,styles.menuLeft]}>
                         <TouchableOpacity  activeOpacity={0.3} onPress={()=> navigate('Card',{name:'麦田'})}>
-                            <Image source={require('./../images/icon-fz.png')}/>
+                            <Image source={require('./../images/icon-look.png')}/>
                         </TouchableOpacity>
                         <Text style={[styles.menuName,{marginRight:50}]}>我要分诊</Text>
                     </View>
                     <View style={[styles.menu,styles.menuRight]}>
                         <TouchableOpacity  activeOpacity={0.3}>
-                            <Image source={require('./../images/icon-fzcx.png')}/>
+                            <Image source={require('./../images/icon-triage.png')}/>
                         </TouchableOpacity>
                         <Text style={[styles.menuName,{marginLeft:30}]}>分诊记录查询</Text>
                     </View>
@@ -58,15 +58,15 @@ const styles  = StyleSheet.create({
     },
     menuLeft:{
         alignItems:'flex-end',
-        marginRight:25
+        marginRight:30
     },
     menuRight:{
         alignItems:'flex-start',
-        marginLeft:25
+        marginLeft:30
     },
     menuName:{
         marginTop:15,
         color:'#333',
-        fontSize:26
+        fontSize:28
     }
 });

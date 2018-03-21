@@ -18,8 +18,8 @@ export default class Card extends Component{
     componentDidMount(){
         setTimeout(()=>{
             const {navigate} = this.props.navigation;
-            navigate('Inquiries');
-        },100);
+            navigate('Human');//Inquiries
+        },2000);
     }
     static navigationOptions = {
         header: null
@@ -31,7 +31,7 @@ export default class Card extends Component{
                 <View style={styles.tipContainer}>
                     <Text style={styles.tip}>请将您的医疗卡放到刷卡器上</Text>
                 </View>
-                <Image source={require('./../images/icon-sk.png')}/>
+                <Image source={require('./../images/operate.png')}/>
                 <Footer/>
             </View>
         );
@@ -47,17 +47,17 @@ const styles  = StyleSheet.create({
         backgroundColor:'#f5f5f5'
     },
     tipContainer:{
-        paddingTop:30,
-        paddingBottom:30,
-        paddingLeft:50,
-        paddingRight:50,
-        marginBottom:30,
-        borderWidth:3,
-        borderColor:'#ddd'
+        paddingTop:33,
+        paddingBottom:33,
+        paddingLeft:66,
+        paddingRight:66,
+        marginBottom:67,
+        borderWidth:1,
+        borderColor:'#707070'
     },
     tip:{
         color:'#333',
-        fontSize:30
+        fontSize:33
     },
     menu:{
         flex:1,

@@ -21,15 +21,15 @@ const styles  = StyleSheet.create({
         flexDirection:'row',
         position:'absolute',
         bottom:0,
-        height:70,
+        height:78,
         width:'100%',
         justifyContent:'center',
         alignItems:'center',
         alignSelf:'flex-end',
-        backgroundColor:'#238264'
+        backgroundColor:'#238464'
     },
     footerText:{
-        fontSize:16,
+        fontSize:17,
         color:'#fff'
     }
 });
