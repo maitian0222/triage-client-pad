@@ -57,8 +57,8 @@ export default class Footer extends Component{
 const styles  = StyleSheet.create({
     container:{
         flexDirection:'row',
-        position:'absolute',
-        top:0,
+      /*  position:'absolute',
+        top:0,*/
         height:95,
         width:'100%',
         paddingLeft:63,

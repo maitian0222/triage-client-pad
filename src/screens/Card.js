@@ -18,20 +18,25 @@ export default class Card extends Component{
     componentDidMount(){
         setTimeout(()=>{
             const {navigate} = this.props.navigation;
-            navigate('Human');//Inquiries
+            navigate('Inquiries');//
+
         },2000);
     }
+
     static navigationOptions = {
         header: null
     };
+
     render(){
         return(
             <View style={styles.container}>
                 <Header/>
-                <View style={styles.tipContainer}>
-                    <Text style={styles.tip}>请将您的医疗卡放到刷卡器上</Text>
-                </View>
-                <Image source={require('./../images/operate.png')}/>
+                    <View style={styles.mainContainer}>
+                        <View style={styles.tipContainer}>
+                            <Text style={styles.tip}>请将您的医疗卡放到刷卡器上</Text>
+                        </View>
+                        <Image source={require('./../images/operate.png')}/>
+                    </View>
                 <Footer/>
             </View>
         );
@@ -42,9 +47,13 @@ export default class Card extends Component{
 const styles  = StyleSheet.create({
     container:{
         flex:1,
-        justifyContent:'center',
         alignItems:'center',
         backgroundColor:'#f5f5f5'
+    },
+    mainContainer:{
+        flex:1,
+        justifyContent:'center',
+        alignItems:'center'
     },
     tipContainer:{
         paddingTop:33,
@@ -58,22 +67,5 @@ const styles  = StyleSheet.create({
     tip:{
         color:'#333',
         fontSize:33
-    },
-    menu:{
-        flex:1,
-        justifyContent:'center'
-    },
-    menuLeft:{
-        alignItems:'flex-end',
-        marginRight:25
-    },
-    menuRight:{
-        alignItems:'flex-start',
-        marginLeft:25
-    },
-    menuName:{
-        marginTop:15,
-        color:'#333',
-        fontSize:26
     }
 });

@@ -19,8 +19,8 @@ export default class Footer extends PureComponent{
 const styles  = StyleSheet.create({
     container:{
         flexDirection:'row',
-        position:'absolute',
-        bottom:0,
+        /*position:'absolute',
+        bottom:0,*/
         height:78,
         width:'100%',
         justifyContent:'center',

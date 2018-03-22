@@ -10,6 +10,7 @@ import Index from './screens/Index';
 import Card from './screens/Card';
 import Human from './screens/Human';
 import Inquiries from './screens/Inquiries';
+import Analysis from './screens/Analysis';
 
 import Home from './screens/Home';
 import NearBy from './screens/NearBy';
@@ -55,10 +56,6 @@ const Tab = TabNavigator(
 
 const Navigator = StackNavigator(
     {
-        /*Tab: { screen: Tab },*/
-        Inquiries:{
-            screen:Inquiries
-        },
         Index:{
             screen:Index
         },
@@ -68,7 +65,12 @@ const Navigator = StackNavigator(
         Human:{
             screen:Human
         },
-
+        Inquiries:{
+            screen:Inquiries
+        },
+        Analysis:{
+            screen:Analysis
+        },
         Tab: { screen: Tab }
     },
     {
