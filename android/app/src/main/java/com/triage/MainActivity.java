@@ -1,4 +1,4 @@
-package com.navigation;
+package com.triage;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "doctor";
+        return "triage-client-pad";
     }
 }

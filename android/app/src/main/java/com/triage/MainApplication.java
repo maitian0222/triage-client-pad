@@ -1,4 +1,4 @@
-package com.navigation;
+package com.triage;
 
 import android.app.Application;
 
